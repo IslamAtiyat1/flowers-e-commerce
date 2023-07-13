@@ -1,0 +1,283 @@
+/* Reset Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+	background-color: #fff;
+	color: #333;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav ul li a {
+	color: #333;
+	text-decoration: none;
+	padding: 10px;
+}
+
+nav ul li a:hover {
+	color: #fff;
+	background-color: #333;
+}
+
+/* Hero Section Styles */
+.hero {
+	background-image: url('https://images.pexels.com/photos/355748/pexels-photo-355748.jpeg?cs=srgb&dl=pexels-pixabay-355748.jpg&fm=jpg');
+	background-position: right;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #ccc;
+}
+
+.hero h1 {
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px #333;
+}
+
+.cta {
+	background-color: #ff0066;
+	color: #fff;
+	padding: 8px 15px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+	background-color: #cc0052;
+	cursor: pointer;
+}
+#discount{color: #ff0066}
+
+/* Featured Products Section Styles */
+.featured {
+	margin: 50px auto;
+	max-width: 1000px;
+	/* display: flex;
+	flex-wrap: wrap;
+	justify-content: center; */
+}
+.c{	text-align: center;
+}
+ #pro{display: flex;}
+
+.product {
+	width: 300px;
+	margin: 20px;
+	box-shadow: 0px 0px 10px #ccc;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.product img {
+	width: 100%;
+	height: 200px;
+	object-fit: contain;
+}
+
+.product h3 {
+	font-size: 24px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.price {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+	color: #333;
+}
+.slider {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .slider-content {
+    /* display: flex; */
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    /* flex: 1; */
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+  }
+  
+  .slider-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .slider-prev,
+  .slider-next {
+    display: inline-block;
+    font-size: 36px;
+    color: #ccc;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .slider-prev:hover,
+  .slider-next:hover {
+    opacity: 0.7;
+  }
+  
+  .slider-prev {
+    margin-right: 20px;
+  }
+  
+  .active {
+    transform: translateX(0);
+  }
+  
+  @media (max-width: 768px) {
+    .slide {
+      margin-right: 10px;
+    }
+    
+    .slider-controls {
+      bottom: 10px;
+    }
+    
+    .slider-prev,
+    .slider-next {
+      font-size: 24px;
+    }
+  }
+  
+
+/* Newsletter Section Styles */
+.newsletter {
+	background-color: #f9f9f9;
+	text-align: center;
+	padding: 50px;
+}
+
+.newsletter h2 {
+	font-size: 36px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.newsletter p {
+	font-size: 18px;
+	color: #777;
+	margin-bottom: 20px;
+}
+
+.newsletter form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.newsletter input[type="email"] {
+	padding: 10px;
+	margin-right: 10px;
+	border: none;
+	border-radius: 5px;
+	flex: 1;
+	max-width: 400px;
+}
+.pcart{display: flex;align-items: center;justify-content: space-between;padding: 5px;}
+.discount {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .discount h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .discount p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .discount-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .discount .cta {
+    background-color: #ff0066;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .discount .cta:hover {
+    background-color: #cc0052;
+    cursor: pointer;
+  }
+  
+.newsletter button[type="submit"] {
+	background-color: #ff0066;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.newsletter button[type="submit"]:hover {
+	background-color: #cc0052;
+}
+/* Footer Styles */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
